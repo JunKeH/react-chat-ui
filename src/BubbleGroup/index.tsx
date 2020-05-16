@@ -41,7 +41,7 @@ export default class BubbleGroup extends React.Component {
       <div style={styles.chatbubbleWrapper}>
         {showSenderName &&
           ((senderName || sampleMessage.senderName) !== '' &&
-            (sampleMessage.id !== 0 && (
+            ((
               <h5 style={styles.bubbleGroupHeader}>
                 {senderName || sampleMessage.senderName}
               </h5>
